@@ -10,6 +10,8 @@ Este conjunto de ejercicios está pensado para repasar JavaScript después de un
 
 ## ex1 — ¿Qué tipo es?
 
+Concepto: en JavaScript, cada valor tiene un tipo. Los más básicos son `String` (texto), `Number` (números) y `Boolean` (verdadero/falso).
+
 Sin ejecutar el código, indica qué tipo de dato contiene cada variable.
 
 ```js
@@ -32,6 +34,8 @@ Resultado esperado:
 
 ## ex2 — Cambia los valores
 
+Concepto: una variable guarda un valor y luego podemos usarlo para formar mensajes. Las cadenas se pueden concatenar con `+`.
+
 Crea estas variables y muestra una frase como la siguiente:
 
 ```js
@@ -51,6 +55,8 @@ Laura tiene 27 años y tiene carnet: true
 ---
 
 ## ex3 — ¿Funciona con let?
+
+Concepto: `let` sirve para declarar variables que sí pueden cambiar su valor después.
 
 ```js
 let edad = 25;
@@ -72,6 +78,8 @@ Explicación: `let` permite reasignar el valor.
 
 ## ex4 — ¿Funciona con const?
 
+Concepto: `const` sirve para declarar una variable que no va a cambiar. Si intentas reasignarle un valor, JavaScript da error.
+
 ```js
 const edad = 25;
 
@@ -91,6 +99,8 @@ Explicación: `const` no permite cambiar el valor una vez declarado.
 ---
 
 ## ex5 — Decide si usar `let` o `const`
+
+Concepto: elegir `let` o `const` depende de si el valor va a modificarse o no.
 
 ```js
 const nombrePersona = "Laura";
@@ -112,6 +122,8 @@ Resultado esperado:
 
 ## ex6 — ¿Puede entrar?
 
+Concepto: los condicionales permiten decidir entre dos caminos según una condición.
+
 ```js
 const edad = 17;
 
@@ -131,6 +143,8 @@ No puedes entrar
 ---
 
 ## ex7 — Temperatura
+
+Concepto: con `if`, `else if` y `else` podemos evaluar varios casos distintos.
 
 ```js
 const temperatura = 31;
@@ -154,6 +168,8 @@ Hace calor
 
 ## ex8 — ¿Qué imprime?
 
+Concepto: `>=` significa “mayor o igual”, y el flujo se evalúa en orden desde el primer `if` hasta el que coincida.
+
 ```js
 const puntos = 80;
 
@@ -175,6 +191,8 @@ Aprobado
 ---
 
 ## ex9 — Verdadero o falso
+
+Concepto: las comparaciones devuelven `true` o `false`. El operador `===` compara valor y tipo.
 
 ```js
 console.log(10 > 5);
@@ -206,6 +224,8 @@ Explicación:
 
 ## ex10 — Mayor de edad
 
+Concepto: usamos comparadores para comprobar relaciones entre números.
+
 ```js
 const edad = 21;
 
@@ -232,6 +252,8 @@ Explicación:
 
 ## ex11 — Cuenta normal hasta 5
 
+Concepto: un bucle `for` repite instrucciones un número determinado de veces.
+
 ```js
 for (let i = 1; i <= 5; i++) {
   console.log(i);
@@ -251,6 +273,8 @@ Resultado esperado:
 ---
 
 ## ex12 — Suma del 1 al 10
+
+Concepto: una variable acumuladora guarda el resultado de cada iteración. Eso se llama “acumular”.
 
 ```js
 let suma = 0;
@@ -272,6 +296,8 @@ Resultado esperado:
 
 ## ex13 — Longitud de una cadena
 
+Concepto: `length` devuelve cuántos caracteres tiene una cadena.
+
 ```js
 const nombre = "Alejandro";
 
@@ -287,6 +313,8 @@ Resultado esperado:
 ---
 
 ## ex14 — Primera letra
+
+Concepto: en JavaScript, una cadena se puede acceder por posición, al igual que un array. La primera posición es el índice `0`.
 
 ```js
 const palabra = "JavaScript";
@@ -304,6 +332,8 @@ J
 
 ## ex15 — Última letra
 
+Concepto: para acceder a la última posición, usamos la longitud menos 1. Así se obtiene el último carácter.
+
 ```js
 const palabra = "Programacion";
 
@@ -320,6 +350,8 @@ n
 
 ## ex16 — Recortar un texto con slice()
 
+Concepto: `slice(inicio, fin)` devuelve una parte del texto. El índice final no se incluye.
+
 ```js
 const palabra = "JavaScript";
 
@@ -335,6 +367,8 @@ Java
 ---
 
 ## ex17 — Las primeras letras de un nombre
+
+Concepto: `slice()` permite obtener un trozo del texto desde una posición concreta hasta otra.
 
 ```js
 const nombre = "Alejandro";
@@ -354,6 +388,8 @@ Explicación: `slice(0, 4)` toma desde el índice 0 hasta el índice 4, sin incl
 
 ## ex18 — Obtener el nombre de usuario de un email
 
+Concepto: `slice()` sirve para recortar cadenas y obtener solo la parte que nos interesa.
+
 ```js
 const email = "alumno@gmail.com";
 
@@ -371,6 +407,8 @@ Explicación: el correo empieza con `alumno` y luego viene `@gmail.com`. Con `sl
 ---
 
 ## ex19 — Saludar
+
+Concepto: una función permite reutilizar código. Recibe parámetros y ejecuta una tarea.
 
 ```js
 function saludar(nombre) {
@@ -392,6 +430,8 @@ Hola, Carlos
 
 ## ex20 — Duplicar
 
+Concepto: una función puede devolver un valor con `return`, y ese valor puede usarse después.
+
 ```js
 function duplicar(numero) {
   return numero * 2;
@@ -409,6 +449,8 @@ Resultado esperado:
 ---
 
 ## ex21 — ¿Qué diferencia hay entre `console.log()` y `return`?
+
+Concepto: `console.log()` muestra algo por pantalla, pero no devuelve un valor útil para seguir usándolo. `return` sí devuelve un resultado que puede almacenarse o reutilizarse.
 
 ```js
 function sumar(a, b) {
@@ -438,6 +480,8 @@ Explicación:
 
 ## ex22 — Mayor de dos
 
+Concepto: una función puede decidir qué valor devolver según una condición.
+
 ```js
 function mayor(a, b) {
   if (a > b) {
@@ -460,6 +504,8 @@ Resultado esperado:
 
 ## ex23 — Acceder a elementos de un array
 
+Concepto: un array es una lista ordenada. Cada elemento tiene una posición llamada índice, y empieza en `0`.
+
 ```js
 const frutas = ["manzana", "plátano", "naranja", "pera"];
 
@@ -480,6 +526,8 @@ pera
 
 ## ex24 — Cambiar un elemento del array
 
+Concepto: los arrays son mutables; podemos cambiar un valor concreto usando su índice.
+
 ```js
 const colores = ["rojo", "verde", "azul"];
 
@@ -497,6 +545,8 @@ Resultado esperado:
 
 ## ex25 — Añadir un elemento con push()
 
+Concepto: `push()` añade un nuevo elemento al final de un array.
+
 ```js
 const alumnos = ["Ana", "Luis", "Marta"];
 
@@ -513,6 +563,8 @@ Resultado esperado:
 ---
 
 ## ex26 — Recorrer un array con for
+
+Concepto: un bucle `for` nos sirve para recorrer cada elemento del array y trabajar con ellos.
 
 ```js
 const ciudades = ["Girona", "Barcelona", "Tarragona", "Lleida"];
@@ -534,6 +586,8 @@ Lleida
 ---
 
 ## ex27 — Buscar aprobados
+
+Concepto: combinar arrays y condicionales permite filtrar información y mostrar solo los elementos que cumplen una condición.
 
 ```js
 const notas = [4, 7, 8, 3, 10, 5];
@@ -558,6 +612,8 @@ Resultado esperado:
 
 ## ex28 — ¿Hay suspensos?
 
+Concepto: también podemos detectar si existe algún elemento que no cumple una condición.
+
 ```js
 const notas = [7, 8, 6, 9, 5];
 
@@ -580,6 +636,8 @@ Explicación: este array no tiene ninguna nota menor que 5, así que no se muest
 ---
 
 ## ex29 — Conocer un objeto
+
+Concepto: un objeto guarda información en propiedades, con un nombre y un valor. Se accede con `objeto.propiedad`.
 
 ```js
 const alumno = {
@@ -605,6 +663,8 @@ Laura
 
 ## ex30 — Modificar una propiedad
 
+Concepto: los objetos también se pueden modificar cambiando el valor de una propiedad.
+
 ```js
 const alumno = {
   nombre: "Laura",
@@ -625,6 +685,8 @@ Resultado esperado:
 ---
 
 ## ex31 — Condición sobre un objeto
+
+Concepto: podemos combinar objetos con condiciones para decidir qué mensaje mostrar.
 
 ```js
 const alumno = {
@@ -649,6 +711,8 @@ Carlos ha suspendido
 ---
 
 ## ex32 — Mostrar todos los hoteles
+
+Concepto: un array puede contener objetos, y cada objeto puede tener varias propiedades.
 
 ```js
 const reservas = [
@@ -686,6 +750,8 @@ Hotel Playa
 
 ## ex33 — Precio de la primera reserva
 
+Concepto: para acceder a propiedades dentro de un objeto del array, usamos la sintaxis `array[i].propiedad`.
+
 ```js
 const reservas = [
   {
@@ -718,6 +784,8 @@ Resultado esperado:
 ---
 
 ## ex34 — Función para calcular el precio de una reserva
+
+Concepto: una función puede recibir un objeto como parámetro y devolver un cálculo basado en sus propiedades.
 
 ```js
 function calcularPrecio(reserva) {
@@ -754,6 +822,8 @@ Resultado esperado:
 ---
 
 ## ex35 — Reto final A: mostrar todos los hoteles
+
+Concepto: se repite el recorrido de un array de objetos para extraer una propiedad concreta de cada elemento.
 
 ```js
 const reservas = [
@@ -796,6 +866,8 @@ Hotel Montaña
 ---
 
 ## ex36 — Reto final B: precio total de cada reserva
+
+Concepto: una operación matemática útil es multiplicar noches por precio para obtener el total de la reserva.
 
 ```js
 const reservas = [
@@ -840,6 +912,8 @@ Hotel Montaña: 350 €
 
 ## ex37 — Reto final C: mostrar reservas de más de 300 €
 
+Concepto: con condicionales dentro de un bucle se pueden filtrar elementos según una regla concreta.
+
 ```js
 const reservas = [
   {
@@ -883,6 +957,8 @@ Hotel Montaña: 350 €
 
 ## ex38 — Reto final D: crear la función `calcularPrecio`
 
+Concepto: encapsular lógica en funciones ayuda a reutilizar cálculos y mantiene el código más limpio.
+
 ```js
 function calcularPrecio(reserva) {
   return reserva.noches * reserva.precio;
@@ -914,6 +990,8 @@ Resultado esperado:
 
 ## ex39 — Reto final E: función `esReservaLarga`
 
+Concepto: una función booleana devuelve `true` o `false` según cumpla o no una condición.
+
 ```js
 function esReservaLarga(reserva) {
   return reserva.noches >= 5;
@@ -937,6 +1015,8 @@ true
 ---
 
 ## ex40 — Reto final F: usar `slice()` sin modificar el array original
+
+Concepto: `slice()` crea una copia de una parte del array o texto, sin tocar el original. Esto es muy útil cuando queremos conservar los datos iniciales.
 
 ```js
 const reservas = [
