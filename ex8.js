@@ -1,0 +1,9 @@
+// ex8.js
+// ¿Qué imprime?
+
+const puntos = 80;
+
+// Completa aquí:
+// if (puntos >= 90) ...
+// else if (puntos >= 50) ...
+// else ...
